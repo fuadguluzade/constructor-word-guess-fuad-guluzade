@@ -12,11 +12,9 @@ Letter.prototype.toString = function () {
 
 Letter.prototype.checkLetter = function (ch) {
     if (ch === this.char) {
-        console.log(true);
         this.hasGuessed = true;
-    } else {
-        console.log(false);
-    }
+        return true;
+    } 
 }
 
 

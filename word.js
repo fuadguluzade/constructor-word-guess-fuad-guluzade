@@ -16,9 +16,23 @@ Word.prototype.getWord = function () {
 }
 
 Word.prototype.checkPresence = function (ch) {
+    var correct = false;
     for (var i = 0; i < this.letterArr.length; i++) {
-        this.letterArr[i].checkLetter(ch);
+        if (this.letterArr[i].checkLetter(ch))
+            correct = true;
     }
+    return correct;
+}
+
+Word.prototype.isFound = function () {
+    var isFound = true;
+    for (var i = 0; i < this.letterArr.length; i++) {
+        if (!this.letterArr[i].hasGuessed) {
+            isFound = false;
+            return;
+        }  
+    }
+    return isFound;
 }
 
 module.exports = Word;
