@@ -1,0 +1,23 @@
+{
+  "name": "constructor-word-guess-fuad-guluzade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuadguluzade/constructor-word-guess-fuad-guluzade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuadguluzade/constructor-word-guess-fuad-guluzade/issues"
+  },
+  "homepage": "https://github.com/fuadguluzade/constructor-word-guess-fuad-guluzade#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
