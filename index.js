@@ -1,8 +1,8 @@
 var word = require('./word.js');
 var inquirer = require('inquirer');
 
-wordsArray = ["monitor", "program", "keyboard"];
-var w = wordsArray[Math.floor(Math.random() * wordsArray.length)];
+wordsArray = ["New York", "Chicago", "San Francisco"];
+var w = wordsArray[Math.floor(Math.random() * wordsArray.length)].toLowerCase();
 wordsArray.splice(wordsArray.indexOf(w), 1);
 
 var remGuesses = 13;
@@ -24,7 +24,7 @@ const askForNextWord = () => {
             }
         ]).then(function (yes) {
             if (yes.play){
-                w = wordsArray[Math.floor(Math.random() * wordsArray.length)];
+                w = wordsArray[Math.floor(Math.random() * wordsArray.length)].toLowerCase();
                 wordsArray.splice(wordsArray.indexOf(w), 1);
                 remGuesses = 13;
                 guessedLetters = [];

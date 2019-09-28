@@ -6,6 +6,9 @@ var Letter = function (char) {
 Letter.prototype.toString = function () {
     if (this.hasGuessed == true) {
         return this.char;
+    } else if (this.char == ' ') {
+        this.hasGuessed = true;
+        return ' ';
     }
     return '_';
 }
